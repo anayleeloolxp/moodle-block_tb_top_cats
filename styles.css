@@ -1,0 +1,94 @@
+.block_tb_top_cats .tb_top_cats {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block_tb_top_cats .tb_top_cats .content_box {
+    text-align: center;
+}
+.block_tb_top_cats .tb_top_cats .content_box .content_title {
+    padding: 1.25rem 1.25rem 10px;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.block_tb_top_cats .tb_top_cats .content_box .content_des {
+    font-weight: 400;
+    font-size: 22px;
+    padding: 0 1.25rem;
+}
+.block_tb_top_cats .tb_top_cats .content_img img {
+    width: 100%;
+}
+
+
+
+/* 09-11-2020(G) */
+
+/* Categories */
+.block_tb_top_cats .tb_top_cats .tb_cat {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 24%;
+    padding: 10px 0;
+    margin: 0.5%;
+    background: #fff;
+    box-shadow: 0 0 2px #e7e7e9;
+    border: 1px solid #e7e7e9;
+}
+.block_tb_top_cats .tb_top_cats .tb_cat .tb_cat_img {
+    width: 35%;
+    text-align: center;
+}
+.block_tb_top_cats .tb_top_cats .tb_cat .tb_cat_content {
+    width: 65%;
+    padding: 15px;
+}
+.block_tb_top_cats .tb_top_cats .tb_cat .tb_cat_content h2.cat_title a {
+    color: #5f6474;
+    font-weight: 600;
+}
+.block_tb_top_cats .tb_top_cats .tb_cat .tb_cat_content h2.cat_title {
+    font-size: 17px;
+    margin: 0 0 18px;
+}
+.block_tb_top_cats .tb_top_cats .tb_cat .tb_cat_content p.cat_des {
+    margin: 0;
+    font-size: 15px;
+}
+.block_tb_top_cats .tb_top_cats .tb_cat .tb_cat_img img {
+    width: 80%;
+    display: inline-block;
+}
+/* 09-11-2020(G) */
+
+
+
+@media only screen and (max-width: 1199px) {
+    .block_tb_top_cats .tb_top_cats .content_box .content_title {
+        font-size: 35px;
+        margin: 0 0 5px;
+    }
+    .block_tb_top_cats .tb_top_cats .content_box .content_des {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .block_tb_top_cats .tb_top_cats .content_box .content_title {
+        font-size: 25px;
+    }
+    .block_tb_top_cats .tb_top_cats .content_box .content_title {
+        padding: 10px;
+        margin: 0;
+    }
+    .block_tb_top_cats .tb_top_cats .content_box {
+        text-align: center;
+        margin: 10px auto;
+        border: 1px solid #eee;
+        max-width: 450px;
+        padding: 0;
+    }
+    .block_tb_top_cats .tb_top_cats .content_box .content_des {
+        padding: 0 15px 15px;
+    }
+}
