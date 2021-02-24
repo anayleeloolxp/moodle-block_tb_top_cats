@@ -68,22 +68,22 @@ class block_tb_top_cats extends block_base {
         $this->content = new stdClass();
         $this->content->text = '<div class="tb_top_cats">';
 
-        foreach($topcats as $cat){
+        foreach ($topcats as $cat) {
             $this->content->text .= '<div class="tb_cat">';
 
-            if($cat->image != ''){
-                $catimage = '<img src="'.$cat->image.'"/>';
-            }else{
+            if ($cat->image != '') {
+                $catimage = '<img src="' . $cat->image . '"/>';
+            } else {
                 $catimage = '';
             }
 
-            $this->content->text .= '<div class="tb_cat_img">'.$catimage.'</div>';
-            
+            $this->content->text .= '<div class="tb_cat_img">' . $catimage . '</div>';
+
             $this->content->text .= '<div class="tb_cat_content">';
 
-            $this->content->text .= '<h2 class="cat_title"><a href="'.$cat->link.'">'.$cat->theme_title.'</a></h2>';
+            $this->content->text .= '<h2 class="cat_title"><a href="' . $cat->link . '">' . $cat->theme_title . '</a></h2>';
 
-            $this->content->text .= '<p class="cat_des">'.$cat->description.'</p>';
+            $this->content->text .= '<p class="cat_des">' . $cat->description . '</p>';
 
             $this->content->text .= '</div>';
 
@@ -114,7 +114,6 @@ class block_tb_top_cats extends block_base {
     public function applicable_formats() {
         return array('all' => true);
     }
-    
 
     /**
      * Get settings from Leeloo
