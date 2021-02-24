@@ -9,7 +9,7 @@
     padding: 1.25rem 1.25rem 10px;
     font-size: 45px;
     font-weight: 700;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 .block_tb_top_cats .tb_top_cats .content_box .content_des {
     font-weight: 400;
@@ -19,8 +19,6 @@
 .block_tb_top_cats .tb_top_cats .content_img img {
     width: 100%;
 }
-
-
 
 /* 09-11-2020(G) */
 
@@ -60,8 +58,6 @@
     display: inline-block;
 }
 /* 09-11-2020(G) */
-
-
 
 @media only screen and (max-width: 1199px) {
     .block_tb_top_cats .tb_top_cats .content_box .content_title {

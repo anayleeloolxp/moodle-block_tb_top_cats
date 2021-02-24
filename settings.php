@@ -25,7 +25,6 @@
 defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
-
     require_once($CFG->dirroot . '/blocks/tb_top_cats/lib.php');
 
     $setting = new admin_setting_configtext(
