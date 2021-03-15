@@ -27,3 +27,5 @@ $string['pluginname'] = 'Leeloo LXP Top Categories';
 $string['displayname'] = 'Leeloo LXP Top Categories';
 $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';
+
+$string['privacy:metadata'] = 'The Leeloo LXP Top Categories (tb_top_cats) block only shows information and does not store data itself.';

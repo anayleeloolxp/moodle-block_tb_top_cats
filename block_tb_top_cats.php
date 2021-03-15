@@ -58,6 +58,14 @@ class block_tb_top_cats extends block_base {
 
         $resposedata = json_decode(base64_decode($settingsjson));
 
+        if (!isset($resposedata->data->categories_data)) {
+            $this->title = get_string('displayname', 'block_tb_top_cats');
+            $this->content = new stdClass();
+            $this->content->text = '';
+            $this->content->footer = '';
+            return $this->content;
+        }
+
         $topcats = $resposedata->data->categories_data;
 
         if (empty($resposedata->data->block_title)) {
