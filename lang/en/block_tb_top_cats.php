@@ -25,6 +25,7 @@
 
 $string['pluginname'] = 'Leeloo LXP Top Categories';
 $string['displayname'] = 'Leeloo LXP Top Categories';
+$string['blocktitle'] = 'Leeloo LXP Top Categories';
 $string['nolicense'] = 'Invalid Leeloo LXP License ID';
 $string['license'] = 'Leeloo LXP License ID';
 $string['tb_top_cats:addinstance'] = 'Add a new Leeloo LXP Top Categories block';
