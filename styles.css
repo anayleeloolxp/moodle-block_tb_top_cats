@@ -87,4 +87,13 @@
     .block_tb_top_cats .tb_top_cats .content_box .content_des {
         padding: 0 15px 15px;
     }
+    .block_tb_top_cats .tb_top_cats .tb_cat {
+        max-width: 49%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .block_tb_top_cats .tb_top_cats .tb_cat {
+        max-width: 100%;
+        margin: .5% 0;
+    }
 }
