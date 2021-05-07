@@ -59,7 +59,11 @@ class block_tb_top_cats extends block_base {
         $resposedata = json_decode(base64_decode($settingsjson));
 
         if (!isset($resposedata->data->categories_data)) {
-            $this->title = get_string('displayname', 'block_tb_top_cats');
+            if ($this->page->user_is_editing()) {
+                $this->title = get_string('displayname', 'block_tb_top_cats');
+            } else {
+                $this->title = '';
+            }
             $this->content = new stdClass();
             $this->content->text = '';
             $this->content->footer = '';
@@ -69,7 +73,11 @@ class block_tb_top_cats extends block_base {
         $topcats = $resposedata->data->categories_data;
 
         if (empty($resposedata->data->block_title)) {
-            $resposedata->data->block_title = get_string('displayname', 'block_tb_top_cats');
+            if ($this->page->user_is_editing()) {
+                $resposedata->data->block_title = get_string('displayname', 'block_tb_top_cats');
+            } else {
+                $resposedata->data->block_title = '';
+            }
         }
         $this->title = $resposedata->data->block_title;
 
