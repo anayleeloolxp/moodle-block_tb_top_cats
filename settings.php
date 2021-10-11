@@ -33,7 +33,7 @@ if ($ADMIN->fulltree) {
         get_string('license', 'block_tb_top_cats'),
         0
     );
-    $setting->set_updatedcallback(block_tb_top_cats_updateconf());
+    //$setting->set_updatedcallback(block_tb_top_cats_updateconf());
     $settings->add($setting);
 
     $setting = new admin_setting_configtop_cats('block_tb_top_cats/settingsjson', '', '', '', PARAM_RAW);
