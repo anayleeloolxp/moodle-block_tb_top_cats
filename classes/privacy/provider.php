@@ -25,8 +25,6 @@
 
 namespace block_tb_top_cats\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for block_tb_top_cats implementing null_provider.
  *
