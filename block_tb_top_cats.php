@@ -77,7 +77,13 @@ class block_tb_top_cats extends block_base {
                 $resposedata->data->block_title = '';
             }
         }
-        $this->title = $resposedata->data->block_title;
+
+        $summaryformatoptions = new stdClass();
+        $summaryformatoptions->noclean = false;
+        $summaryformatoptions->overflowdiv = false;
+        $summaryformatoptions->filter = true;
+
+        $this->title = format_text($resposedata->data->block_title, 1, $summaryformatoptions);
 
         $this->content = new stdClass();
         $this->content->text = '<div class="tb_top_cats">';
@@ -95,9 +101,9 @@ class block_tb_top_cats extends block_base {
 
             $this->content->text .= '<div class="tb_cat_content">';
 
-            $this->content->text .= '<h2 class="cat_title"><a href="' . $cat->link . '">' . $cat->theme_title . '</a></h2>';
+            $this->content->text .= '<h2 class="cat_title"><a href="' . $cat->link . '">' . format_text($cat->theme_title, 1, $summaryformatoptions) . '</a></h2>';
 
-            $this->content->text .= '<p class="cat_des">' . $cat->description . '</p>';
+            $this->content->text .= '<p class="cat_des">' . format_text($cat->description, 1, $summaryformatoptions) . '</p>';
 
             $this->content->text .= '</div>';
 
